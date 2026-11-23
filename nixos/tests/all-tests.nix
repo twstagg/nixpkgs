@@ -348,6 +348,7 @@ in
     _module.args.compression = "xz";
   };
   bind = runTest ./bind.nix;
+  bindery = runTest ./web-apps/bindery.nix;
   bird2 = import ./bird.nix {
     inherit (pkgs) lib;
     inherit runTest;

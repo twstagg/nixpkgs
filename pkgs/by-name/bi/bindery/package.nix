@@ -5,6 +5,7 @@
   fetchFromGitHub,
   makeWrapper,
   nix-update-script,
+  nixosTests,
 }:
 
 let
@@ -117,6 +118,9 @@ buildGoModule {
 
   passthru = {
     inherit webui;
+    tests = {
+      inherit (nixosTests) bindery;
+    };
     updateScript = nix-update-script { };
   };
 
