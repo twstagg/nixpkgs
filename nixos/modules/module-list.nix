@@ -1694,6 +1694,7 @@
   ./services/web-apps/audiobookshelf.nix
   ./services/web-apps/baikal.nix
   ./services/web-apps/bentopdf.nix
+  ./services/web-apps/bindery.nix
   ./services/web-apps/bluemap.nix
   ./services/web-apps/bluesky-pds.nix
   ./services/web-apps/bookorbit.nix
